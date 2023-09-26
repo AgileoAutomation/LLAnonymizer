@@ -15,4 +15,6 @@ This ultra-simple application anonymizes the content you want, replacing sensiti
 
 Give LLAnonymizer a try and let us know if you find it useful! You can also contribute and update the application.
 
-**Note:** if you don't want to compile the application, the executable is accessible here [LLAnonymizer/blob/main/LLAnonymizer/bin/Release/LLAnonymizer.exe](https://github.com/AgileoAutomation/LLAnonymizer/blob/main/LLAnonymizer/bin/Release/LLAnonymizer.exe)
+**Note:** if you don't want to compile the application, the executable is accessible here [LLAnonymizer/bin/Release/LLAnonymizer.exe](https://github.com/AgileoAutomation/LLAnonymizer/blob/main/LLAnonymizer/bin/Release/LLAnonymizer.exe)
+
+You can find explanations how to use the application here: [LLAnonymzer-HowTo.pdf](https://github.com/AgileoAutomation/LLAnonymizer/blob/main/LLAnonymzer-HowTo.pdf)
