@@ -1,5 +1,7 @@
 # LLAnonymizer
-A simple application to anonymize text before using Large Language models (AI) on the cloud
+A simple application to anonymize text before using Large Language models (AI) on the cloud.
+
+It uses a technic called [Pseudonymization](https://en.wikipedia.org/wiki/Pseudonymization) to replace sensitive text with placeholders without changing the overall structure of sentences so that AI can still "understand" them.
 
 Sample screenshot:
 
