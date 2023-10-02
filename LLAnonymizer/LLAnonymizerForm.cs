@@ -8,8 +8,6 @@
  */
 using System;
 using System.Drawing;
-using System.Linq;
-using System.Security;
 using System.Windows.Forms;
 
 namespace LLAnonymizer
@@ -74,6 +72,7 @@ namespace LLAnonymizer
         	// Reset the color to black for all text in the text box
             textEditionBox.SelectAll();
             textEditionBox.SelectionColor = Color.Black;
+            string text = textEditionBox.Text;
 
             bFoundDuplicate = false;
             
@@ -159,6 +158,17 @@ namespace LLAnonymizer
         private void txtReplace_TextChanged(object sender, EventArgs e)
         {
         	VerifyDuplicateBeforeReplace();
+        }
+
+        //Catch when user presses ctrl + v and assign text to textbox without any format
+        private void textEditionBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && e.KeyCode == Keys.V)
+            {
+                RichTextBox richTextBox = (RichTextBox)sender;
+                richTextBox.Text += (string)Clipboard.GetData("Text");
+                e.Handled = true;
+            }
         }
 
         void TextEditionBoxTextChanged(object sender, System.EventArgs e)

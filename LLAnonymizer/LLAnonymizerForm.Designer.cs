@@ -56,6 +56,7 @@ namespace LLAnonymizer
 			this.textEditionBox.TabIndex = 0;
 			this.textEditionBox.Text = "";
 			this.textEditionBox.TextChanged += new System.EventHandler(this.TextEditionBoxTextChanged);
+			this.textEditionBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textEditionBox_KeyDown);
 			// 
 			// btnReplace
 			// 
